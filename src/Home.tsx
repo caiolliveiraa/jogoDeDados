@@ -32,7 +32,7 @@ const Home: React.FC<HomeProps> = ({ navigation }) => {
     if (guess === total) {
       resultado = 'Você acertou!';
     } else {
-      resultado = 'Você errou! A soma dos dados é ' + total;
+      resultado = 'Você errou! A soma dos dados deu ' + total;
     }
 
     useStore.getState().addToHistory({ dado1: newDado1, dado2: newDado2, resultado });
